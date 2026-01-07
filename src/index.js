@@ -1,7 +1,7 @@
-import { getDisplayLanguage } from './util';
+import { mainBundleUtilFunc } from './util';
 
 const separateBundleCode = await import('./separate-bundle');
 
-console.log(separateBundleCode.makeAccountPage());
+separateBundleCode.print();
 
-console.log(getDisplayLanguage(null));
+mainBundleUtilFunc();

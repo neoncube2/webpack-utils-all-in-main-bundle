@@ -1,5 +1,5 @@
-import { getNumEntriesToLearn } from './util';
+import { separateBundleUtilFunc } from './util';
 
-export function makeAccountPage() {
-	return getNumEntriesToLearn({});
+export function print() {
+	return separateBundleUtilFunc({});
 }

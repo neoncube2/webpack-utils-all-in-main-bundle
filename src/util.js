@@ -1,6 +1,6 @@
-export function getNumEntriesToLearn(user) {
-	return user.testsNumWordsToLearn ?? 5;
+export function separateBundleUtilFunc() {
+	console.log('util function only used in separate bundle');
 }
-export function getDisplayLanguage(user) {
-	return user?.displayLanguage ?? 4;
+export function mainBundleUtilFunc() {
+	console.log('util function only used in main bundle');
 }
