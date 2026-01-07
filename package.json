@@ -1,0 +1,27 @@
+{
+	"name": "mylittlewordland",
+	"version": "0.0.1",
+	"license": "Copyright Elijah Black",
+	"scripts": {
+		"start-server": "yarn run cross-env NODE_ENV=development yarn run webpack serve --host=learning-site.com --port=4433",
+		"build": "yarn run cross-env NODE_ENV=production yarn run webpack"
+	},
+	"private": true,
+	"sideEffects": [
+		"*.css"
+	],
+	"devDependencies": {
+		"@babel/core": "8.0.0-beta.3",
+		"@babel/preset-env": "8.0.0-beta.3",
+		"@babel/preset-react": "8.0.0-beta.3",
+		"babel-loader": "*",
+		"caniuse-lite": "*",
+		"cross-env": "*",
+		"html-webpack-plugin": "*",
+		"terser-webpack-plugin": "*",
+		"webpack": "*",
+		"webpack-cli": "*",
+		"webpack-dev-server": "*"
+	},
+	"packageManager": "yarn@4.12.0"
+}
